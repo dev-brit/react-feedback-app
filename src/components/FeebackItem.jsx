@@ -1,15 +1,11 @@
-import {useState} from 'react'
+function FeebackItem({item}) {
 
-function FeebackItem() {
-
-  const [rating, setRating] = useState(7)
-  const [text, setText] = useState('This is an feedback item')
 
   return (
     <div className="card">
-      <div className="num-display">{rating}</div>
+      <div className="num-display">{item.rating}</div>
       <div className="text-display">
-        {text}
+        {item.text}
       </div>
     </div>
   )
