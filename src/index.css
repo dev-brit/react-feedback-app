@@ -100,6 +100,11 @@ header {
   color: #fff;
 }
 
+[type='radio'].checked ~ label {
+  background: #ff6a95;
+  color: #fff;
+}
+
 .input-group {
   display: flex;
   flex-direction: row;
